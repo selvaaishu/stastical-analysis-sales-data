@@ -1,0 +1,32 @@
+STATISTICAL HYPOTHESIS TEST RESULTS
+
+1️⃣ One-Sample T-Test
+Tested whether average Total_Sales is greater than ₹100,000.
+
+H0: Mean = 100000
+H1: Mean > 100000
+
+Result: p-value < 0.05
+Decision: Reject H0
+Conclusion: Average sales are significantly greater than ₹100,000.
+
+2️⃣ Independent T-Test (North vs South)
+
+H0: Mean North Sales = Mean South Sales
+H1: Means are different
+
+Result: p-value < 0.05
+Decision: Reject H0
+Conclusion: Sales differ significantly between North and South regions.
+
+3️⃣ One-Way ANOVA (All Regions)
+
+H0: All regional means are equal
+H1: At least one region differs
+
+Result: p-value < 0.05
+Decision: Reject H0
+Conclusion: At least one region shows significantly different sales.
+
+Overall Interpretation:
+The statistical tests confirm that sales performance is significantly influenced by regional differences and that average sales exceed the benchmark value.

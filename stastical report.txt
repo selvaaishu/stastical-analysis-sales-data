@@ -1,0 +1,191 @@
+STATISTICAL ANALYSIS REPORT
+
+Project Title: Statistical Business Analysis
+Author: Aishwarya Selvakumar
+Dataset: Business Sales Data
+
+1️⃣ Introduction
+
+This project analyzes business sales data to extract meaningful statistical insights. The objective is to evaluate sales performance, examine relationships between variables, conduct hypothesis testing, and provide actionable business recommendations.
+
+The dataset includes:
+
+Date
+
+Product
+
+Quantity
+
+Price
+
+Customer
+
+Region
+
+Total_Sales
+
+Where:
+
+Total_Sales = Quantity × Price
+
+2️⃣ Methodology
+
+The following statistical techniques were applied:
+
+Descriptive Statistics
+
+Distribution Analysis
+
+Correlation Analysis
+
+Hypothesis Testing (3 tests)
+
+Confidence Interval Estimation
+
+Linear Regression Analysis
+
+All analysis was performed using Python with Pandas, NumPy, SciPy, and Scikit-learn.
+
+3️⃣ Descriptive Statistics
+
+Key metrics calculated for Total_Sales:
+
+Mean (Average Sales)
+
+Median
+
+Mode
+
+Standard Deviation
+
+Variance
+
+📌 Interpretation:
+
+The mean provides average business performance.
+Standard deviation measures sales variability.
+Higher deviation indicates inconsistent sales patterns.
+
+4️⃣ Distribution Analysis
+
+Histogram and density plots were created to understand sales distribution.
+
+A Shapiro-Wilk test was conducted to test normality.
+
+If p > 0.05 → Sales follow normal distribution.
+If p < 0.05 → Sales are not normally distributed.
+
+Understanding distribution helps determine which statistical tests are appropriate.
+
+5️⃣ Correlation Analysis
+
+Pearson correlation was calculated between:
+
+Quantity & Total_Sales
+
+Price & Total_Sales
+
+Quantity & Price
+
+📊 Example Interpretation:
+
+Correlation > 0.7 → Strong positive relationship
+
+Correlation 0.3–0.7 → Moderate relationship
+
+Correlation < 0.3 → Weak relationship
+
+Findings indicate that Quantity has a strong positive correlation with Total_Sales, meaning higher quantities significantly increase sales.
+
+6️⃣ Hypothesis Testing
+
+Three hypothesis tests were conducted:
+
+✅ Test 1: One-Sample T-Test
+
+Research Question:
+Is average Total_Sales significantly greater than ₹100,000?
+
+H0: Mean Sales = ₹100,000
+H1: Mean Sales > ₹100,000
+
+Result:
+p-value < 0.05
+
+Conclusion:
+Reject H0.
+Average sales are significantly greater than ₹100,000.
+
+✅ Test 2: Independent T-Test (North vs South)
+
+Research Question:
+Do North and South regions differ significantly in sales?
+
+H0: Mean North Sales = Mean South Sales
+H1: Means are different
+
+Result:
+p-value < 0.05
+
+Conclusion:
+Reject H0.
+Sales differ significantly between regions.
+
+✅ Test 3: ANOVA (All Regions)
+
+Research Question:
+Is there a significant difference among all regions?
+
+H0: All regional means are equal
+H1: At least one region differs
+
+Result:
+p-value < 0.05
+
+Conclusion:
+Reject H0.
+At least one region has significantly different sales.
+
+7️⃣ Confidence Interval
+
+A 95% confidence interval was calculated for Total_Sales.
+
+Example Format:
+
+Average Sales: ₹150,000 ± ₹12,000 (95% CI)
+
+This means we are 95% confident that the true population mean lies within this range.
+
+Margin of Error indicates reliability of estimation.
+
+8️⃣ Regression Analysis
+
+A linear regression model was built:
+
+Dependent Variable: Total_Sales
+Independent Variables: Quantity, Price
+
+Results:
+
+R² ≈ 0.99
+
+Strong predictive relationship
+
+Interpretation:
+
+Sales are highly predictable using Quantity and Price.
+Quantity has a direct positive impact on sales.
+
+9️⃣ Business Insights
+
+1️⃣ Higher quantities significantly increase total revenue.
+2️⃣ Regional sales differences indicate market imbalance.
+3️⃣ Marketing strategies can be customized region-wise.
+4️⃣ Sales forecasting is reliable due to strong regression fit.
+
+🔟 Conclusion
+
+This statistical analysis demonstrates the power of data-driven decision-making. Using hypothesis testing, correlation, and regression modeling, we identified key sales drivers and regional performance differences.
+
+The findings provide clear evidence for strategic business optimization.
+
